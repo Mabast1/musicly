@@ -1,17 +1,9 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import {
-  HiOutlineHashtag,
-  HiOutlineHome,
-  HiOutlineMenu,
-  HiOutlinePhotograph,
-  HiOutlineUserGroup,
-} from "react-icons/hi";
+import { NavLink, Link } from "react-router-dom";
+import { HiOutlineMenu } from "react-icons/hi";
 import { FiHeadphones } from "react-icons/fi";
 import { RiCloseLine } from "react-icons/ri";
 
-import { logo } from "../assets";
-import { links } from "../assets/constants";
 import Navlinks from "./Navlinks";
 
 const Sidebar = () => {
@@ -20,11 +12,13 @@ const Sidebar = () => {
   return (
     <>
       <div className="md:flex hidden flex-col w-[240px] py-10 px-4 bg-[#191624]">
-        <div className="flex gap-1 justify-center items-center">
-          <FiHeadphones className="text-white" size={22} />
-          <p className="text-white font-semibold text-lg">Musicly</p>
-        </div>
-        <Navlinks />
+        <Link to="/">
+          <div className="flex gap-1 justify-center items-center">
+            <FiHeadphones className="text-white" size={22} />
+            <p className="text-white font-semibold text-xl">Musicly</p>
+          </div>
+          <Navlinks />
+        </Link>
       </div>
 
       {/* Mobile Sidebar */}
