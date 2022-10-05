@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div className="relative flex">
-      <Sidebar />
+      <Sidebar activeSong={activeSong} />
       <div className="flex-1 flex flex-col bg-gradient-to-br from-black to-[#6c04b1]">
         <Searchbar />
 
