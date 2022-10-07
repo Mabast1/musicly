@@ -10,6 +10,7 @@ import MusicPlayer from "./MusicPlayer";
 import Loader from "./Loader";
 import Error from "./Error";
 import Navlinks from "./Navlinks";
+import TopChartCard from "./TopChartCard";
 
 export {
   TopPlay,
@@ -24,4 +25,5 @@ export {
   Loader,
   Error,
   Navlinks,
+  TopChartCard,
 };
