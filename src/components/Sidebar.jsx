@@ -36,11 +36,11 @@ const Sidebar = () => {
           <Navlinks />
           <div className="border-b border-gray-500 my-4" />
           <div className="flex flex-col justify-center items-center gap-3">
-            <p className="text-md text-white font-bold">Todays Top Clip</p>
+            <p className="text-md text-white font-bold">Todays Concerts</p>
             <iframe
               width="200"
               height="300"
-              src="https://www.youtube.com/embed/z1Da5CgyGoI?rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/yzInC0lHIMM?rel=0&modestbranding=1"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
