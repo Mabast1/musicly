@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const DetailsHeader = ({ songData }) => {
   const artistId = false;
+  const artistData = false;
   return (
     <div className="relative w-full flex flex-col">
       <div className="w-full bg-gradient-to-1 from-transparent to-black sm:h-48 h-28" />
@@ -33,8 +34,15 @@ const DetailsHeader = ({ songData }) => {
               </p>
             </Link>
           )}
+
+          <p className="text-base text-gray-400 mt-2">
+            {artistData
+              ? artistData?.artists[artistId].attributes?.genreNames[0]
+              : songData?.genres?.primary}
+          </p>
         </div>
       </div>
+      <div className="w-full sm:h44 h-24" />
     </div>
   );
 };
