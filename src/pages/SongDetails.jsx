@@ -19,7 +19,7 @@ const SongDetails = () => {
     <div className="flex flex-col">
       <DetailsHeader songData={songData} />
 
-      <div className="mb-10 mt-4">
+      <div className="mb-10">
         <h2 className="text-white text-3xl font-bold">
           Lyrics for {songData?.title}
         </h2>
