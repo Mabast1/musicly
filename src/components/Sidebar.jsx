@@ -14,19 +14,19 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="md:flex hidden flex-col w-[240px] py-10 px-4 bg-[#191624]">
+      <div className="md:flex hidden flex-col w-[240px] py-10 px-4 bg-[#000]">
         <Link to="/">
           <div className="flex gap-1 justify-center items-center">
             <FiHeadphones
               className={`text-purple-500 ${isPlaying && "animate-spin"}`}
-              size={22}
+              size={28}
             />
-            <p className="text-white font-semibold text-xl animate-slowfade">
+            <p className="text-white font-semibold text-3xl animate-slowfade">
               Musicly
             </p>
           </div>
           <div className="flex justify-center items-center">
-            <p className="text-gray-400 text-[9px] tracking-widest ">
+            <p className="text-gray-400 text-[9px] pl-5 -mt-1 tracking-widest ">
               mabastahmad.com
             </p>
           </div>
@@ -34,7 +34,7 @@ const Sidebar = () => {
 
         <div className="flex flex-col justify-between gap-10">
           <Navlinks />
-          <div className="border-b border-gray-500 my-4" />
+          {/* <div className="border-b border-gray-500 my-4" /> */}
           <div className="flex flex-col justify-center items-center gap-3">
             <p className="text-md text-white font-bold">Todays Concerts</p>
             <iframe
