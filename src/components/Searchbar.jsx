@@ -1,5 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import { FiSearch } from "react-icons/fi";
 
 const Searchbar = () => {
@@ -13,7 +14,7 @@ const Searchbar = () => {
   };
 
   return (
-    <from
+    <form
       onSubmit={handleSubmit}
       autoComplete="off"
       className="p-2 text-gray-400 focus-within:text-gray-600"
@@ -34,7 +35,7 @@ const Searchbar = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
-    </from>
+    </form>
   );
 };
 
