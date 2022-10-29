@@ -40,7 +40,7 @@ const Sidebar = () => {
             <iframe
               width="200"
               height="300"
-              src="https://www.youtube.com/embed/yzInC0lHIMM?rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/SCeoiZWCX1U?rel=0&modestbranding=1"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
